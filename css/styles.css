@@ -28,7 +28,7 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
 }
 
 .buy-inner {display:inline-block; vertical-align:top; text-align:left}
-.buy-price {line-height:64px}
+.buy-price {line-height:64px; text-transform:uppercase}
 .buy-price strong {font-size:32px; font-weight:bold; color:#ffc915; letter-spacing:0.8px}
 .buy-price strong span {font-size:64px; letter-spacing:1.6px}
 .buy-price em {font-style:normal; font-size:28px; color:#bbbaba; text-decoration:line-through; margin:0 0 0 44px; letter-spacing:0.7px}
@@ -71,17 +71,25 @@ a.btn:hover {opacity:0.8}
     .welcome-slider .slick-dots li button::before {top:-50px; bottom:-50px}
 }
 
+.welcome-bf-notice {position:absolute; right:55px; bottom:55px; color:#9a9fa3; font-weight:600; font-size:32px; line-height:32px}
+
+@media screen and (max-width:1139px) {
+    .welcome-bf-notice {left:0; right:0; bottom:75px; font-size:19px; line-height:19px; text-align:center}
+}
+
 .welcome-x3-container {position:relative; padding:171px 0 0 0; color:#fff}
 .welcome-x3-logo {width:421px; height:50px; background:url(../images/welcome-x3-logo.png) no-repeat; background-size:100%}
 .welcome-x3-text {font-weight:500; font-size:24px; line-height:29px; margin:21px 0 0 0}
 .welcome-x3-buy {padding:39px 0 0 0}
-.welcome-x3-buy+.welcome-x3-buy {padding:20px 0 0 0}
+.welcome-x3-buy .buy-link+.buy-link {margin:20px 0 0 0}
+.welcome-x3-buy .buy-link a {display:block; width:382px; text-align:center; padding:0}
 
 @media screen and (max-width:1139px) {
     .welcome-x3-container {padding:100px 0 0 25px; color:#000}
     .welcome-x3-text {font-size:18px; line-height:22px; margin:15px 0 0 0}
-    .welcome-x3-buy {padding:15px 0 0 0}
-    .welcome-x3-buy+.welcome-x3-buy {padding:15px 0 0 0}
+    .welcome-x3-buy .buy-price {line-height:36px; text-align:center; width:382px}
+    .welcome-x3-buy .buy-price strong span {font-size:36px}
+    .welcome-x3-buy .buy-link+.buy-link {margin:16px 0 0 0}
 }
 
 .welcome-7pro-container {float:right; padding:200px 0 0 0; color:#000}
@@ -105,6 +113,8 @@ a.btn:hover {opacity:0.8}
     .welcome-6pro-container {padding:123px 0 0 25px; float:none; width:auto}
     .welcome-6pro-text {font-size:18px; line-height:22px; margin:18px 0 0 0}
     .welcome-6pro-buy {padding:35px 0 0 0}
+    .welcome-6pro-buy .buy-price {line-height:36px; text-align:center; width:365px}
+    .welcome-6pro-buy .buy-price strong span {font-size:36px}
 }
 
 .links {padding:56px 0 59px 0; background:#15033b}
@@ -195,6 +205,8 @@ a.btn:hover {opacity:0.8}
     .realme-6-main-text {font-size:19px; line-height:23px}
     .realme-6-main-buy {margin:28px 0 0 0; text-align:center}
     .realme-6-main-buy .buy-inner {text-align:center}
+    .realme-6-main-buy .buy-price {line-height:36px}
+    .realme-6-main-buy .buy-price strong span {font-size:36px}
 }
 
 .realme-6-s {margin:53px -80px 0 -80px; height:525px; background:url(../images/realme-6-s.jpg) no-repeat center; background-size:cover; border-radius:10px; box-shadow:0 0 24px 4px rgba(1, 210, 255, 0.46); position:relative}
@@ -217,6 +229,8 @@ a.btn:hover {opacity:0.8}
     .realme-6-s-text {font-size:19px; line-height:23px}
     .realme-6-s-buy {margin:50px 0 0 0; text-align:center}
     .realme-6-s-buy .buy-inner {text-align:center}
+    .realme-6-s-buy .buy-price {line-height:36px}
+    .realme-6-s-buy .buy-price strong span {font-size:36px}
 }
 
 .realme-6-mini {margin:51px -42px 0 -42px}
@@ -296,6 +310,8 @@ a.btn:hover {opacity:0.8}
     .realme-7-text {font-size:19px; line-height:23px}
     .realme-7-buy {margin:28px 0 0 0; text-align:center}
     .realme-7-buy .buy-inner {text-align:center}
+    .realme-7-buy .buy-price {line-height:36px}
+    .realme-7-buy .buy-price strong span {font-size:36px}
 }
 
 .realme-c {background:#070112; padding:61px 0 177px 0}
@@ -318,6 +334,8 @@ a.btn:hover {opacity:0.8}
 .realme-c-main-buy .buy-price strong span {font-size:48px; letter-spacing:0}
 .realme-c-main-buy .buy-price em {margin:0 0 0 18px; letter-spacing:0; color:#545454}
 .realme-c-main-buy .buy-link {margin:-5px 0 0 0}
+.realme-c-main-buy .buy-link+.buy-link {margin:10px 0 0 0}
+.realme-c-main-buy .btn {width:360px; padding:0; text-align:center}
 .realme-c-main-buy .btn span {font-size:30px; margin:0 43px 0 0}
 .realme-c-main-buy .btn span::after {right:-24px}
 
@@ -329,6 +347,8 @@ a.btn:hover {opacity:0.8}
     .realme-c-main-buy {margin:28px 0 0 0; text-align:center}
     .realme-c-main-buy+.realme-c-main-buy {margin:28px 0 0 0}
     .realme-c-main-buy .buy-inner {text-align:center}
+    .realme-c-main-buy .buy-price {line-height:36px}
+    .realme-c-main-buy .buy-price strong span {font-size:36px}
 }
 
 .realme-c-mini {margin:32px -42px 0 -42px}
@@ -354,6 +374,8 @@ a.btn:hover {opacity:0.8}
     .realme-c-mini-buy {margin:30px 0 0 0}
     .realme-c-mini-buy-item {display:block; margin:30px 0 0 0}
     .realme-c-mini .buy-link {text-align:center}
+    .realme-c-mini-item:first-child .realme-c-mini-buy .buy-price {line-height:36px}
+    .realme-c-mini-item:first-child .realme-c-mini-buy .buy-price strong span {font-size:36px}
 }
 
 .realme-x {background:#16043e; padding:120px 0 0 0}
@@ -376,6 +398,8 @@ a.btn:hover {opacity:0.8}
 .realme-x-main-buy .buy-price strong span {font-size:48px; letter-spacing:0}
 .realme-x-main-buy .buy-price em {margin:0 0 0 18px; letter-spacing:0; color:rgba(255, 255, 255, 0.5)}
 .realme-x-main-buy .buy-link {margin:-5px 0 0 0}
+.realme-x-main-buy .buy-link+.buy-link {margin:13px 0 0 0}
+.realme-x-main-buy .btn {width:362px; padding:0; text-align:center}
 .realme-x-main-buy .btn span {font-size:30px; margin:0 43px 0 0}
 .realme-x-main-buy .btn span::after {right:-24px}
 
@@ -387,6 +411,8 @@ a.btn:hover {opacity:0.8}
     .realme-x-main-buy {margin:28px 0 0 0; text-align:center}
     .realme-x-main-buy+.realme-x-main-buy {margin:22px 0 0 0}
     .realme-x-main-buy .buy-inner {text-align:center}
+    .realme-x-main-buy .buy-price {line-height:36px}
+    .realme-x-main-buy .buy-price strong span {font-size:36px}
 }
 
 .realme-eco {background:#16043e; padding:130px 0 170px 0}
